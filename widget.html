@@ -1,0 +1,176 @@
+<script type="text/javascript">
+    document.title = " DOCUMENT TITLE - RESTAURANT GROUP NAME "; //DOCUMENT TITLE - RESTAURANT GROUP NAME
+</script>
+
+
+
+<!-- Widgets to add *-->
+<center><div class="tab-content"> 
+  <div id="logo"><img src=" HEADER IMAGE URL "></div> <!-- HEADER IMAGE URL - HEADER-->
+
+  <div id="selector">
+<div id="menu">
+      <ul>
+        <!-- RESTAURANT GROUP - NAME HEADER LIST-->
+        <li class="li-header">RESTAURANT GROUP NAME:</li>
+        <!-- RESTAURANT NAME - LIST -->
+        <li><a href=" WIDGET LINK 1">RESTAURANT NAME 1</a></li>
+        <li><a href=" WIDGET LINK 2">RESTAURANT NAME 3</a></li>
+        <li><a href=" WIDGET LINK 3">RESTAURANT NAME 3</a></li>
+      </ul>
+    </div> 
+
+</div>
+
+</div></center>
+<!-- media queries -->
+<style type="text/css">
+
+  :root {
+
+  --header-background-color: blue;           /* HEADER-BACKGROUND-COLOR */
+  --body-background-color: red;              /* LIST-HEADER-BACKGROUND-COLOR */
+  --list-header-background-color: yellow;    /* LIST-HEADER-FONT-COLOR */
+  --list-header-font-color: green;           /* LIST-HEADER-FONT-COLOR */
+  --list-background-color: orange;           /* LIST-BACKGROUND-COLOR */
+  --list-font-color: pink;                   /* LIST-FONT-COLOR */
+  --list-hover-background-color: brown;      /* LIST-HOVER-BACKGROUND-COLOR */
+  --list-hover-font-color: cyan;             /* LIST-HOVER-FONT-COLOR */
+
+}
+
+/* ¿? */
+
+.ui-datepicker-div, .ui-widget-content{
+  display: none;
+}
+
+#logo{
+  background-color: var(--header-background-color);
+  padding-top: 10px;
+}
+#logo img{
+  width: 180px;
+}
+body{
+  background-color: var(--body-background-color);
+}
+.tab-pane{
+  position: relative;
+  margin-left: 2%;
+  width: 50%;
+  height: 920px;
+}
+#selector{
+  font-family:"Dosis", sans-serif;
+  padding-top: 10px;
+ 
+}
+#selector ul{
+  list-style: none;
+  padding-left: 0;
+}
+#selector li{
+  list-style: none;
+  display: block;
+  /*background-color: #FFFFFF;*/
+  padding: 10px;
+  text-align: center;
+  /*color: #000;*/
+  max-width: 330px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+#selector a{
+  color: var(--list-font-color);
+  text-decoration: none;
+}
+#selector a:hover{
+  color: var(--list-hover-font-color);
+}
+.tab-content h1{
+  text-align: center;
+}
+
+#menu{
+  width:330px;
+  min-height: 250px;
+}
+
+#menu ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+#menu ul a, #menu ul li.li-header {
+    display:block;
+    text-decoration:none;
+    font-weight:400;
+    font-size:14px;
+    padding:8px 0 8px 0;
+    font-family:"Dosis", sans-serif;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+#menu ul li {
+  /*color:#000;*/
+  width: 100%;
+    background-color: var(--list-background-color);
+    border: 1px solid var(--list-header-background-color);
+    border-collapse: collapse;
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+}
+#menu ul li:hover {
+  background: var(--list-hover-background-color);
+  color: var(--list-hover-font-color);
+    /*background: rgba(0,0,0,0.5);*/
+
+}
+#menu ul li.li-header{
+  background-color: var(--list-header-background-color);
+  color: var(--list-header-font-color) !important;
+}
+
+
+
+
+
+
+@media only screen and (max-width : 855px) { 
+  .tab-pane{
+    position: relative;
+    float: left;
+    width: 95%;
+    height: 1100px;
+  }
+  #selector{
+    display: block;
+  }
+  #selector li{
+  width: 100%;
+}
+  }
+</style>
+
+<!-- hide catalan widget -->
+<script type="text/javascript">
+  window.onload= tranlations();
+  $('body').click(tranlations);
+  function tranlations(){
+    var pathName = window.location.pathname;
+    if(pathName.search( 'ca_ES' )!=-1){ 
+      $(document).ready(function(){
+        $(".main").hide();
+        $(".tab-content").show();
+      });    
+    }else{
+      $(".tab-content").hide();
+      $(".main").show();
+      $("body").css("background", "#fff");
+    }
+  }
+</script>
+
