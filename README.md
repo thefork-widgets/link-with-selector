@@ -9,3 +9,6 @@
 3- Paste in GA.
 
 4- Send the ca_ES link to the customer.
+
+
+<img src="https://i.imgur.com/x1J6KPR.png">
