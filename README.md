@@ -1,6 +1,6 @@
 # link-with-selector
 
-<b>Customized by default widt TheFork branding.</b>
+<b>Customized by default with TheFork branding.</b>
 
 1- Add the group widget links.
 
